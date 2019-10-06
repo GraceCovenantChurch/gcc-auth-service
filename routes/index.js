@@ -25,6 +25,8 @@ router.get(
   }),
   function(req, res) {
     var token = req.user.token;
+    console.log(req);
+    console.log(res);
     res.redirect("http://localhost:3000?token=" + token);
   }
 );
